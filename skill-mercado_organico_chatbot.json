@@ -1,0 +1,740 @@
+{
+  "intents": [
+    {
+      "intent": "boas_vindas",
+      "examples": [
+        {
+          "text": "fala"
+        },
+        {
+          "text": "fala ai"
+        },
+        {
+          "text": "há quanto tempo"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "oi tudo bem"
+        },
+        {
+          "text": "ola"
+        },
+        {
+          "text": "opa"
+        },
+        {
+          "text": "saudaçoes"
+        }
+      ]
+    },
+    {
+      "intent": "cancelar",
+      "examples": [
+        {
+          "text": "desejo sair"
+        },
+        {
+          "text": "desisti da minha compra"
+        },
+        {
+          "text": "não quero mais"
+        },
+        {
+          "text": "quero cancelar"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "finalizacao",
+      "examples": [
+        {
+          "text": "Adeus"
+        },
+        {
+          "text": "Até breve"
+        },
+        {
+          "text": "Até logo"
+        },
+        {
+          "text": "Até mais"
+        },
+        {
+          "text": "Tchau"
+        },
+        {
+          "text": "Um abraço"
+        }
+      ]
+    },
+    {
+      "intent": "pedido_de_produtos_organicos",
+      "examples": [
+        {
+          "text": "gostaria de uma duzia de ovos"
+        },
+        {
+          "text": "o que é um produto organico?"
+        },
+        {
+          "text": "quero baguete organica"
+        },
+        {
+          "text": "quero cebola"
+        },
+        {
+          "text": "quero couve"
+        },
+        {
+          "text": "quero pão organico"
+        },
+        {
+          "text": "quero pedir alface"
+        },
+        {
+          "text": "quero pedir rabanetes"
+        },
+        {
+          "text": "quero queijo"
+        },
+        {
+          "text": "quero tomates"
+        },
+        {
+          "text": "quero um pote de mel por favor"
+        },
+        {
+          "text": "um maço de cebolinha"
+        },
+        {
+          "text": "um maço de cheiro-verde por favor"
+        },
+        {
+          "text": "voces tem rucula"
+        }
+      ]
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "Oi"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Tudo bem"
+        }
+      ]
+    },
+    {
+      "intent": "sobre_mercado",
+      "examples": [
+        {
+          "text": "esta tudo fresco"
+        },
+        {
+          "text": "eu quero saber sobre vcs"
+        },
+        {
+          "text": "me fale sobre o seu mercado"
+        },
+        {
+          "text": "quais os produtos voces tem disponivel"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Brasília",
+          "synonyms": [
+            "bsb"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rio de Janeiro",
+          "synonyms": [
+            "rio",
+            "rj"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "São Paulo",
+          "synonyms": [
+            "Sampa",
+            "sp"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "produtos_organicos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "agriao",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "alface",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "caju",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "carne",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cebola",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cebolinha",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cenoura",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cheiro-verde",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "couve",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mostarda",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nozes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "organico",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ovos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pao",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pepino",
+          "synonyms": [
+            "pickles"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "queijo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "rabanete",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "rucula",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tomate",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-south.functions.appdomain.cloud/api/v1/web/bomtempojuliano%40gmail.com_dev/default/FuncaoChatBotMercado.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Tudo bem? Como posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_1_1607379243279",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1607379703825",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_1_1607379703828"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1607379411475",
+      "context": {
+        "cidade": "@cidade"
+      },
+      "conditions": "@cidade",
+      "event_name": "input",
+      "dialog_node": "handler_4_1607379411500"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1607379662075",
+      "context": {
+        "produtos_organicos": "@produtos_organicos"
+      },
+      "conditions": "@produtos_organicos",
+      "event_name": "input",
+      "dialog_node": "handler_4_1607379662078"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, sem problema!!Cancelando!!!!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1607379333044",
+      "context": {
+        "cancelou": true
+      },
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "#cancelar",
+      "event_name": "generic",
+      "dialog_node": "handler_5_1607380665306",
+      "previous_sibling": "response_7_1607429586261"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Qual Produto?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1607379662075",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1607379662078",
+      "previous_sibling": "handler_4_1607379662078"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1607379766619",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_6_1607379766621"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Quantas Unidades?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1607379766619",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1607379766621",
+      "previous_sibling": "handler_6_1607379766621"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Qual a Cidade?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1607379411475",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1607379411500",
+      "previous_sibling": "handler_4_1607379411500"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Qual Horário de entrega?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1607379703825",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1607379703828",
+      "previous_sibling": "handler_1_1607379703828"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tchau"
+              },
+              {
+                "text": "Até mais"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#finalizacao",
+      "dialog_node": "node_1_1607379243279",
+      "previous_sibling": "node_1_1607379333044"
+    },
+    {
+      "type": "frame",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "data": "$date",
+            "hora": "$time",
+            "cidade": "$cidade",
+            "produto": "$produtos_organicos"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#pedido_de_produtos_organicos",
+      "dialog_node": "node_1_1607379333044",
+      "previous_sibling": "node_5_1608052821636"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#boas_vindas",
+      "dialog_node": "node_4_1607378407163",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "dialog_node": "node_5_1608052821636",
+      "previous_sibling": "node_4_1607378407163"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pedido Cancelado!!!!"
+              },
+              {
+                "text": "cancelado"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1607379333044",
+      "context": {
+        "date": null,
+        "time": null,
+        "cidade": null,
+        "cancelou": false
+      },
+      "conditions": "$cancelou",
+      "dialog_node": "response_10_1607381798209"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Boa tarde!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1607378407163",
+      "conditions": "now().before('18:00:00')",
+      "dialog_node": "response_3_1607379059857",
+      "previous_sibling": "response_8_1607378670297"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Pedido de <?$webhook_result_1.retorno_produto?> separado pra cidade <?$webhook_result_1.retorno_cidade?>, no dia $webhook_result_1.retorno_data.reformatDateTime('dd/MM/yyy')?>, no horário <?$webhook_result_1.retorno_hora?>."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1607379333044",
+      "context": {},
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_4_1607429601161",
+      "previous_sibling": "response_10_1607381798209"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Boa noite!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1607378407163",
+      "conditions": "true",
+      "dialog_node": "response_7_1607379103133",
+      "previous_sibling": "response_3_1607379059857"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Separando......"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1607379333044",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1607429586261",
+      "previous_sibling": "response_4_1607429601161"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bom dia!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1607378407163",
+      "conditions": "now().before('12:00:00')",
+      "dialog_node": "response_8_1607378670297"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1607379333044",
+      "variable": "$cidade",
+      "dialog_node": "slot_10_1607379411475",
+      "previous_sibling": "handler_5_1607380665306"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1607379333044",
+      "variable": "$produtos_organicos",
+      "dialog_node": "slot_10_1607379662075",
+      "previous_sibling": "slot_10_1607379411475"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1607379333044",
+      "variable": "$number",
+      "dialog_node": "slot_4_1607379766619",
+      "previous_sibling": "slot_7_1607379703825"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1607379333044",
+      "variable": "$time",
+      "dialog_node": "slot_7_1607379703825",
+      "previous_sibling": "slot_10_1607379662075"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "mercado_organico_chatbot",
+  "language": "pt-br",
+  "description": ""
+}
